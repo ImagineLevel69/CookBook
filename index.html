@@ -11,11 +11,21 @@
         top: 10px;
         right: 10px;
       }
-      /* Add this CSS to your stylesheet */
+      img.top-right {
+        max-width: 30%;
+        height: auto;
+      }
+
       @media only screen and (max-width: 600px) {
         .top-right {
-          position: relative;
+          position: static;
           width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+        img.top-right {
+          max-width: 100%;
           height: auto;
         }
       }
@@ -25,7 +35,7 @@
   </head>
   <body>
     <header>
-      <img src="feast.jpg" alt="Feast" class="top-right" style="width: 30%; height: auto;">
+      <img src="feast.jpg" alt="Feast" class="top-right">
       <p style="font-size: 30px">
         Ingredient list
       </p>
