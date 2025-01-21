@@ -4,11 +4,13 @@
     <style>
         body {
             font-family: 'Verdana', sans-serif;
-            background-color: #cde1cb;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
 
         .navbar {
-            background-color: #000;
+            background-color: #333;
             overflow: hidden;
         }
 
@@ -25,6 +27,48 @@
                     background-color: #ddd;
                     color: black;
                 }
+
+        .header {
+            background-image: url('header-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            font-size: 50px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+            .content h2 {
+                font-size: 30px;
+                color: #333;
+            }
+
+            .content ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .content li {
+                background: #fff;
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+                .content li a {
+                    text-decoration: none;
+                    color: #333;
+                }
+
+                    .content li a:hover {
+                        text-decoration: underline;
+                    }
     </style>
     <meta charset="utf-8">
     <title>Cookbook</title>
@@ -34,17 +78,16 @@
         <a href="#home">Home</a>
         <a href="#search">Search</a>
     </div>
-    <header>
-        <p style="font-size: 30px">
-            Ingredient list
-        </p>
-    </header>
-    <p>
-        These are the ingredients that you need:
+    <div class="header">
+        Welcome to the Cookbook
+    </div>
+    <div class="content">
+        <h2>Ingredient list</h2>
+        <p>These are the ingredients that you need:</p>
         <ul>
             <li>Tin of chopped tomatoes</li>
             <li>Tin of baked beans</li>
-            <li>Tin of beans (recipies will use kidney as they are most common and cheapest)</li>
+            <li>Tin of beans (recipes will use kidney as they are most common and cheapest)</li>
             <li>Rice</li>
             <li>Pasta</li>
             <li>Bread</li>
@@ -52,22 +95,15 @@
             <li>Potato</li>
             <li>Garlic</li>
             <li>Oil</li>
-            <li>Cheese (when optional will not be in recipies or ingredients)</li>
+            <li>Cheese (when optional will not be in recipes or ingredients)</li>
         </ul>
-    </p>
-    <header>
-        <p style="font-size: 30px">
-            Recipe list
-        </p>
-    </header>
-    <p>
+        <h2>Recipe list</h2>
         <ul>
             <li><a href="b_t.html">Beans on toast</a></li>
             <li><a href="c_r.html">Chilli and rice</a></li>
             <li><a href="g_c_s.html">Grilled cheese sandwich</a></li>
-            <li><a href="j_p.html">Jacket Potatoe</a></li>
             <li><a href="t_s.html">Tomato sauce and pasta</a></li>
         </ul>
-    </p>
+    </div>
 </body>
 </html>
