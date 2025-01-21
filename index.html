@@ -9,22 +9,11 @@
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
-        <div class="search-container">
-            <input type="text" id="navbar-search-input" placeholder="Search...">
-            <button id="navbar-search-btn">Search</button>
-        </div>
     </div>
     <div class="header">
         <div class="header-text">Welcome to the Cookbook</div>
     </div>
     <div class="content">
-        <div class="header-search-container">
-            <h2>Recipe list</h2>
-            <div class="search-container">
-                <input type="text" id="content-search-input" placeholder="Search...">
-                <button id="content-search-btn">Search</button>
-            </div>
-        </div>
         <h2>Ingredient list</h2>
         <p>These are the ingredients that you need:</p>
         <ul>
@@ -41,6 +30,10 @@
             <li>Cheese (when optional will not be in recipes or ingredients)</li>
         </ul>
         <h2>Recipe list</h2>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-btn">Search</button>
+        </div>
         <ul id="recipe-list">
             <li><a href="b_t.html">Beans on toast</a></li>
             <li><a href="c_r.html">Chilli and rice</a></li>
