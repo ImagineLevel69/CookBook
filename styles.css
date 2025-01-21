@@ -82,8 +82,9 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, padding 0.4s ease-in-out;
     opacity: 0;
+    margin-left: 10px; /* Add margin to prevent cutting off */
 }
 
 #search-btn {
@@ -102,4 +103,5 @@ body {
 .search-container.active #search-input {
     width: 200px;
     opacity: 1;
+    padding: 10px; /* Ensure padding is applied when active */
 }
