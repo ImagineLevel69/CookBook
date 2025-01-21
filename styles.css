@@ -63,7 +63,7 @@ body {
         background: #fff;
         margin: 10px 0;
         padding: 10px;
-        border: 1px solid #333;
+        border: 1px solid #333; /* Ensure border color is distinct */
         border-radius: 5px;
     }
 
@@ -76,9 +76,16 @@ body {
                 text-decoration: underline;
             }
 
-.search-container {
+.header-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add space between the heading and search bar */
     margin-bottom: 20px;
-    text-align: right;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
 }
 
 #search-input {
