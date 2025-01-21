@@ -68,6 +68,17 @@ body {
     padding: 5px 10px;
 }
 
+    #search-btn:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+.search-container.active #search-input {
+    width: 200px;
+    opacity: 1;
+    padding: 10px;
+}
+
 h2 {
     display: inline-block;
     margin-right: 20px;
