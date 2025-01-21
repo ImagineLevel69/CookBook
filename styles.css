@@ -1,9 +1,9 @@
 body {
     font-family: 'Verdana', sans-serif;
-    background-color: #fff; /* Changed to white */
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    color: #333; /* Changed font color */
+    color: #333;
 }
 
 .navbar {
@@ -27,7 +27,7 @@ body {
 
 .header {
     height: 300px;
-    color: #333; /* Changed font color */
+    color: #333;
     text-align: center;
     padding-top: 100px;
     font-size: 50px;
