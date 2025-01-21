@@ -51,7 +51,7 @@ body {
     margin-bottom: 20px;
 }
 
-#search-input {
+#navbar-search-input, #content-search-input {
     flex: 1;
     padding: 5px;
     margin-right: 10px;
@@ -64,16 +64,16 @@ body {
     margin-left: 10px;
 }
 
-#search-btn {
+#navbar-search-btn, #content-search-btn {
     padding: 5px 10px;
 }
 
-    #search-btn:hover {
+    #navbar-search-btn:hover, #content-search-btn:hover {
         background-color: #ddd;
         color: black;
     }
 
-.search-container.active #search-input {
+.search-container.active #navbar-search-input, .search-container.active #content-search-input {
     width: 200px;
     opacity: 1;
     padding: 10px;
