@@ -8,7 +8,7 @@
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
-        <input type="text" id="searchBar" onkeyup="searchRecipes()" placeholder="Search for recipes...">
+        <a href="#search">Search</a>
     </div>
     <div class="header">
         <div class="header-text">Welcome to the Cookbook</div>
@@ -30,7 +30,7 @@
             <li>Cheese (when optional will not be in recipes or ingredients)</li>
         </ul>
         <h2>Recipe list</h2>
-        <ul id="recipeList">
+        <ul>
             <li><a href="b_t.html">Beans on toast</a></li>
             <li><a href="c_r.html">Chilli and rice</a></li>
             <li><a href="g_c_s.html">Grilled cheese sandwich</a></li>
@@ -38,25 +38,6 @@
             <li><a href="t_s.html">Tomato sauce and pasta</a></li>
         </ul>
     </div>
-    <script>
-        function searchRecipes() {
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('searchBar');
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("recipeList");
-            li = ul.getElementsByTagName('li');
-
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
-    </script>
 </body>
 </html>
 
