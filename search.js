@@ -26,3 +26,4 @@ function filterRecipes(query) {
         }
     });
 }
+
