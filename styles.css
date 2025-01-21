@@ -85,7 +85,7 @@ body {
 
 .search-container {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 #search-input {
@@ -115,29 +115,4 @@ body {
     width: 200px;
     opacity: 1;
     padding: 10px;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 600px) {
-    .header-search-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .search-container {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    #search-input {
-        width: 100%;
-        opacity: 1;
-        padding: 10px;
-        margin-left: 0;
-    }
-
-    #search-btn {
-        width: 100%;
-        margin-top: 10px;
-    }
 }
