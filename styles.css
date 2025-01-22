@@ -143,7 +143,7 @@ body {
 
         .content ol li::before {
             content: counter(list-counter) ".";
-            background: #4CAF50;
+            background: #808080;
             color: white;
             width: 25px;
             height: 25px;
