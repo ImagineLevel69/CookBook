@@ -137,14 +137,12 @@ body {
         border-radius: 5px;
         position: relative;
         counter-increment: list-counter;
+        display: flex;
+        align-items: center;
     }
 
         .content ol li::before {
             content: counter(list-counter) ".";
-            position: absolute;
-            left: -30px;
-            top: 50%;
-            transform: translateY(-50%);
             background: #4CAF50;
             color: white;
             width: 25px;
@@ -154,4 +152,5 @@ body {
             align-items: center;
             justify-content: center;
             font-weight: bold;
+            margin-right: 10px;
         }
