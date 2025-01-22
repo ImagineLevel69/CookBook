@@ -5,8 +5,7 @@ document.getElementById('search-btn').addEventListener('click', function () {
     if (searchContainer.classList.contains('active')) {
         searchInput.focus();
     } else {
-        searchInput.value = '';
-        filterRecipes('');
+        filterRecipes(searchInput.value.toLowerCase());
     }
 });
 
