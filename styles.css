@@ -111,7 +111,7 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -119,5 +119,39 @@ body {
 }
 
     #search-btn:hover {
-        background-color: #ddd;
+        background-color: #45a049;
     }
+
+/* Style for ordered list */
+.content ol {
+    list-style: none;
+    counter-reset: list-counter;
+    padding: 0;
+}
+
+    .content ol li {
+        background: #f9f9f9;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        position: relative;
+        counter-increment: list-counter;
+    }
+
+        .content ol li::before {
+            content: counter(list-counter) ".";
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #4CAF50;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
