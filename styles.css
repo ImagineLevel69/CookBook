@@ -130,7 +130,6 @@ body {
 }
 
     .content ol li {
-        background: #f9f9f9;
         margin: 10px 0;
         padding: 10px;
         border: 1px solid #ddd;
@@ -143,8 +142,7 @@ body {
 
         .content ol li::before {
             content: counter(list-counter) ".";
-            background: #808080;
-            color: white;
+            color: black;
             width: 25px;
             height: 25px;
             border-radius: 50%;
