@@ -107,6 +107,11 @@ body {
     opacity: 1;
 }
 
+    #search-input:focus {
+        border-color: #808080; /* Change this to your desired color */
+        outline: none; /* Remove the default outline */
+    }
+
 #search-btn {
     padding: 10px 20px;
     font-size: 16px;
